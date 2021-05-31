@@ -10,3 +10,9 @@ size = (800, 600)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("My First Game")
 
+running = True
+while running:
+
+    for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
